@@ -868,6 +868,10 @@ a {
 
 /* profile page */
 @media (width <= 768px) {
+  .profile-page{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .profile-page .overview {
     flex-direction: column;
   }
@@ -1321,4 +1325,61 @@ a {
   -o-transform: rotate(5deg);
 }
 /* files page */
+/* plans page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+@media (width <= 768px) {
+  .plans-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+.plans-page .plan .top {
+  outline: 3px solid transparent;
+  border: 3px solid white;
+}
+.plans-page .plan .top .price {
+  font-size: 40px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.plans-page .plan .top .price span {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.plans-page .plan ul li {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.plans-page .plan ul li i:first-child {
+  font-size: 18px;
+  margin-right: 5px;
+  color: var(--red-color);
+}
+.plans-page .plan ul li i.yes {
+  color: var(--green-color);
+}
+.plans-page .plan ul li i.help {
+  color: var(--grey-color);
+  cursor: pointer;
+  margin-left: auto;
+}
+.plans-page .plan.green .top {
+  outline-color: var(--green-color);
+}
+.plans-page .plan.blue .top {
+  outline-color: var(--blue-color);
+}
+.plans-page .plan.orange .top {
+  outline-color: var(--orange-color);
+}
+/* plans page */
 /* Content */
