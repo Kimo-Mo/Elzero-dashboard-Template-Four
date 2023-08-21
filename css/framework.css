@@ -90,6 +90,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mr-5{
+  margin-right: 5px;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -148,6 +151,9 @@
 /* position */
 .p-relative {
   position: relative;
+}
+.p-absolute{
+  position: absolute;
 }
 /* position */
 /* color */

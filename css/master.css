@@ -1220,4 +1220,105 @@ a {
   }
 }
 /* friends page */
+/* files page */
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+@media (width <= 768px) {
+  .files-page {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+.files-stats {
+  min-width: 260px;
+}
+@media (width <= 375px) {
+  .files-page {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .files-stats {
+    min-width: 200px;
+  }
+}
+.files-stats > div i {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.files-stats > div i.blue {
+  background-color: rgb(0 117 255 / 20%);
+}
+.files-stats > div i.green {
+  background-color: rgb(34 197 94 / 20%);
+}
+.files-stats > div i.red {
+  background-color: rgb(244 67 54 / 20%);
+}
+.files-stats > div i.orange {
+  background-color: rgb(245 158 11 / 20%);
+}
+.files-stats > div .size {
+  margin-left: auto;
+}
+.files-stats > a {
+  margin: 15px auto 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.files-stats > a:hover {
+  background-color: var(--blue-alt-color);
+}
+.files-stats > a:hover > i {
+  animation: moveUp infinite 0.8s;
+  -webkit-animation: moveUp infinite 0.8s;
+}
+@keyframes moveUp {
+  0%,
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+}
+.files-content {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  flex: 1;
+}
+.files-content .file .icon img {
+  width: 64px;
+  height: 64px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.files-content .file:hover .icon img {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+/* files page */
 /* Content */
